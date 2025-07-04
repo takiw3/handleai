@@ -40,9 +40,14 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <a href="#pricing" className="btn-primary">
+            <button 
+              className="btn-primary"
+              data-cal-link="propulsion-ai/30min"
+              data-cal-namespace="30min"
+              data-cal-config='{"layout":"month_view"}'
+            >
               Start Free Trial <ArrowRight className="w-4 h-4" />
-            </a>
+            </button>
             <a href="#demo" className="btn-secondary">
               <div className="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center">
                 <Play className="w-2 h-2 text-white fill-white ml-0.5" />

@@ -38,9 +38,14 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <a href="#pricing" className="btn-primary">
+            <button 
+              className="btn-primary"
+              data-cal-link="propulsion-ai/30min"
+              data-cal-namespace="30min"
+              data-cal-config='{"layout":"month_view"}'
+            >
               Get Started
-            </a>
+            </button>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -66,9 +71,14 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              <a href="#pricing" className="btn-primary mt-4">
+              <button 
+                className="btn-primary mt-4"
+                data-cal-link="propulsion-ai/30min"
+                data-cal-namespace="30min"
+                data-cal-config='{"layout":"month_view"}'
+              >
                 Get Started
-              </a>
+              </button>
             </div>
           </div>
         )}

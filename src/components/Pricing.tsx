@@ -99,10 +99,15 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <a href="#contact" className={`${plan.ctaStyle} w-full justify-center`}>
+              <button 
+                className={`${plan.ctaStyle} w-full justify-center`}
+                data-cal-link="propulsion-ai/30min"
+                data-cal-namespace="30min"
+                data-cal-config='{"layout":"month_view"}'
+              >
                 {plan.cta}
                 {plan.ctaStyle === 'btn-primary' && <ArrowRight className="w-4 h-4" />}
-              </a>
+              </button>
             </div>
           ))}
         </div>

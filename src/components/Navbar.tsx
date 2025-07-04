@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Briefcase, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -18,9 +18,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-[68px]">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="icon-square icon-purple w-[28px] h-[28px]">
-              <Briefcase className="w-4 h-4 text-white" />
-            </div>
+            <span className="text-2xl">🤝</span>
             <span className="text-lg font-bold text-white">Handle AI</span>
           </div>
 

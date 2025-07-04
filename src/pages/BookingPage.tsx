@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowLeft, Briefcase } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BookingPage = () => {
@@ -71,9 +71,7 @@ const BookingPage = () => {
           <div className="flex items-center justify-between h-[68px]">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <div className="icon-square icon-purple w-[28px] h-[28px]">
-                <Briefcase className="w-4 h-4 text-white" />
-              </div>
+              <span className="text-2xl">🤝</span>
               <span className="text-lg font-bold text-white">Handle AI</span>
             </Link>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, Twitter, Linkedin, Github } from 'lucide-react';
+import { Twitter, Linkedin, Github } from 'lucide-react';
 
 const Footer = () => {
   const footerLinks = {
@@ -37,9 +37,7 @@ const Footer = () => {
             {/* Logo and Description */}
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3 mb-6">
-                <div className="icon-square icon-purple w-[28px] h-[28px]">
-                  <Briefcase className="w-4 h-4 text-white" />
-                </div>
+                <span className="text-2xl">🤝</span>
                 <span className="text-lg font-bold text-white">Handle AI</span>
               </div>
               <p className="text-sm text-gray-300 mb-6 max-w-sm">

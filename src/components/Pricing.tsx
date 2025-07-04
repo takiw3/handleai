@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Lightbulb, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
   const plans = [
@@ -99,15 +100,10 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <button 
-                className={`${plan.ctaStyle} w-full justify-center`}
-                data-cal-link="propulsion-ai/30min"
-                data-cal-namespace="30min"
-                data-cal-config='{"layout":"month_view"}'
-              >
+              <Link to="/book" className={`${plan.ctaStyle} w-full justify-center`}>
                 {plan.cta}
                 {plan.ctaStyle === 'btn-primary' && <ArrowRight className="w-4 h-4" />}
-              </button>
+              </Link>
             </div>
           ))}
         </div>

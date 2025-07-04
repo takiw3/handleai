@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Play, BarChart3 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const rotatingWords = ['follow ups', 'late invoices', 'no-shows', 'lead nurture', 'support'];
@@ -40,14 +41,9 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <button 
-              className="btn-primary"
-              data-cal-link="propulsion-ai/30min"
-              data-cal-namespace="30min"
-              data-cal-config='{"layout":"month_view"}'
-            >
+            <Link to="/book" className="btn-primary">
               Start Free Trial <ArrowRight className="w-4 h-4" />
-            </button>
+            </Link>
             <a href="#demo" className="btn-secondary">
               <div className="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center">
                 <Play className="w-2 h-2 text-white fill-white ml-0.5" />

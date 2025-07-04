@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Briefcase, Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,14 +39,9 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <button 
-              className="btn-primary"
-              data-cal-link="propulsion-ai/30min"
-              data-cal-namespace="30min"
-              data-cal-config='{"layout":"month_view"}'
-            >
+            <Link to="/book" className="btn-primary">
               Get Started
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -71,14 +67,9 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              <button 
-                className="btn-primary mt-4"
-                data-cal-link="propulsion-ai/30min"
-                data-cal-namespace="30min"
-                data-cal-config='{"layout":"month_view"}'
-              >
+              <Link to="/book" className="btn-primary mt-4">
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
         )}

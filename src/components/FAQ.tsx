@@ -81,9 +81,9 @@ const FAQ = () => {
 
         <div className="text-center mt-16">
           <p className="text-gray-300 mb-6">Still have questions?</p>
-          <a href="tel:+14159928333" className="btn-primary">
+          <a href="tel:+12893675460" className="btn-primary">
             <Phone className="w-4 h-4" />
-            Call us at +1 (415) 992-8333
+            Call us at +1 (289) 367-5460
           </a>
         </div>
       </div>

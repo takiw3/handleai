@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { getCalApi } from "@calcom/embed-react";
+import Cal, { getCalApi } from "@calcom/embed-react";
 import { ArrowLeft, Briefcase } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -47,22 +47,13 @@ const BookingPage = () => {
 
         {/* Cal.com Embed */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl overflow-hidden shadow-2xl">
-            <button 
-              data-cal-namespace="30min"
-              data-cal-link="propulsion-ai/30min"
-              data-cal-config='{"layout":"month_view"}'
-              className="w-full h-[700px] border-0 bg-transparent"
-              style={{ minHeight: '700px' }}
-            >
-              {/* Cal.com will replace this button content */}
-              <div className="flex items-center justify-center h-full">
-                <div className="text-center">
-                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
-                  <p className="text-gray-600">Loading calendar...</p>
-                </div>
-              </div>
-            </button>
+          <div className="bg-white rounded-2xl overflow-hidden shadow-2xl" style={{ minHeight: '700px' }}>
+            <Cal 
+              namespace="30min"
+              calLink="propulsion-ai/30min"
+              style={{width:"100%",height:"700px",overflow:"scroll"}}
+              config={{"layout":"month_view"}}
+            />
           </div>
         </div>
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Play, BarChart3 } from 'lucide-react';
+import { ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -44,11 +44,9 @@ const Hero = () => {
             <Link to="/book" className="btn-primary">
               Start Free Trial <ArrowRight className="w-4 h-4" />
             </Link>
-            <a href="#demo" className="btn-secondary">
-              <div className="w-5 h-5 border-2 border-white rounded-full flex items-center justify-center">
-                <Play className="w-2 h-2 text-white fill-white ml-0.5" />
-              </div>
-              See Demo
+            <a href="tel:+12893675460" className="btn-secondary">
+              <Phone className="w-4 h-4" />
+              Call A Handler
             </a>
           </div>
 

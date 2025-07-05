@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, Phone, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {

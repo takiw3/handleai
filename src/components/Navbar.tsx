@@ -19,7 +19,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <span className="text-2xl">🤝</span>
-            <span className="text-lg font-bold text-white">Handle AI</span>
+            <span className="text-lg font-bold text-white">Propulsion AI</span>
           </div>
 
           {/* Desktop Navigation */}

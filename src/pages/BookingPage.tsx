@@ -72,7 +72,7 @@ const BookingPage = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
               <span className="text-2xl">🤝</span>
-              <span className="text-lg font-bold text-white">Handle AI</span>
+              <span className="text-lg font-bold text-white">Propulsion AI</span>
             </Link>
 
             {/* Back Button */}
@@ -91,7 +91,7 @@ const BookingPage = () => {
             Book Your Free Consultation
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-            Schedule a 30-minute call to see how Handle AI can transform your business operations
+            Schedule a 30-minute call to see how Propulsion AI can transform your business operations
           </p>
         </div>
 
@@ -124,7 +124,7 @@ const BookingPage = () => {
                 <span className="text-white font-bold">AI</span>
               </div>
               <h3 className="text-white font-semibold mb-2">Custom Demo</h3>
-              <p className="text-gray-400 text-sm">See Handle AI in action for your business</p>
+              <p className="text-gray-400 text-sm">See Propulsion AI in action for your business</p>
             </div>
           </div>
         </div>

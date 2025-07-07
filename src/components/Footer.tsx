@@ -38,7 +38,7 @@ const Footer = () => {
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-2xl">🤝</span>
-                <span className="text-lg font-bold text-white">Handle AI</span>
+                <span className="text-lg font-bold text-white">Propulsion AI</span>
               </div>
               <p className="text-sm text-gray-300 mb-6 max-w-sm">
                 AI-powered business automation that handles your follow-ups, collections, and customer communication so you can focus on what matters most.
@@ -78,7 +78,7 @@ const Footer = () => {
         <div className="py-6 border-t border-white/6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              © 2024 Handle AI. All rights reserved.
+              © 2024 Propulsion AI. All rights reserved.
             </p>
             <a href="mailto:support@gethandle.ai" className="text-sm text-white hover:text-gray-300 transition-colors">
               support@gethandle.ai

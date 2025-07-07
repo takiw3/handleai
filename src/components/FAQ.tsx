@@ -6,7 +6,7 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'How quickly can I get started with Handle AI?',
+      question: 'How quickly can I get started with Propulsion AI?',
       answer: 'Under 5 minutes. Connect your tools, set preferences, and AI Handlers go live—no technical knowledge required.',
     },
     {
@@ -31,7 +31,7 @@ const FAQ = () => {
     },
     {
       question: 'Do I need to cancel my existing tools?',
-      answer: 'No. Handle AI integrates with your existing software stack. We enhance what you already have rather than replacing it.',
+      answer: 'No. Propulsion AI integrates with your existing software stack. We enhance what you already have rather than replacing it.',
     },
     {
       question: 'What if I\'m not satisfied with the results?',
@@ -47,7 +47,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-            Everything you need to know about Handle AI and how it works
+            Everything you need to know about Propulsion AI and how it works
           </p>
         </div>
 

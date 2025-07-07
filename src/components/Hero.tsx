@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Sub-headline */}
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl leading-relaxed">
-            AI Handlers that chase late invoices, rescue no-shows, nurtures your leads for you 24/7 across voice, email, and text.
+            AI Handlers that chase late invoices, rescue no-shows, nurture your leads for you 24/7 across voice, email, and text.
           </p>
 
           {/* CTAs */}
@@ -63,7 +63,7 @@ const Hero = () => {
                 <div className="w-5 h-5 bg-blue-500 rounded flex items-center justify-center">
                   <BarChart3 className="w-3 h-3 text-white" />
                 </div>
-                <span className="text-sm font-semibold">Handle AI Dashboard</span>
+                <span className="text-sm font-semibold">Propulsion AI Dashboard</span>
               </div>
               <div className="flex items-center gap-1">
                 <div className="w-4 h-4 bg-white/10 rounded flex items-center justify-center">

@@ -34,7 +34,7 @@ const Benefits = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-            24/7 Personalized Follow Ups Always Delivering Results
+            24/7 Personalized Conversations Always Delivering Results
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             Transform your business operations with AI employees that never sleep, never quit, and never make mistakes.

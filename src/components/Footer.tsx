@@ -41,7 +41,7 @@ const Footer = () => {
                 <span className="text-lg font-bold text-white">Propulsion AI</span>
               </div>
               <p className="text-sm text-gray-300 mb-6 max-w-sm">
-                AI-powered business automation that handles your follow-ups, collections, and customer communication so you can focus on what matters most.
+                AI-powered voice agents that handle your appointment booking, lead nurture, and customer support 24/7 for you.
               </p>
               <div className="flex gap-3">
                 <a href="#twitter" className="w-9 h-9 bg-white/8 hover:bg-white/14 rounded-lg flex items-center justify-center transition-colors">

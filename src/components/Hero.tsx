@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Sub-headline */}
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl leading-relaxed">
-            AI Handlers that chase late invoices, rescue no-shows, nurture your leads for you 24/7 across voice, email, and text.
+            AI voice agents that book appointments, qualify leads, and handle customer support for you 24/7 across voice, email, and text.
           </p>
 
           {/* CTAs */}

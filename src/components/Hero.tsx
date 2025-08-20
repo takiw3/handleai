@@ -41,13 +41,13 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Link to="/book" className="btn-primary">
+            <Link to="/form" className="btn-primary">
               Start Free Trial <ArrowRight className="w-4 h-4" />
             </Link>
-            <a href="tel:+12893675460" className="btn-secondary">
+            <Link to="/form" className="btn-secondary">
               <Phone className="w-4 h-4" />
               Call A Handler
-            </a>
+            </Link>
           </div>
 
           {/* Platform Mockup Window */}

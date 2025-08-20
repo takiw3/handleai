@@ -81,10 +81,10 @@ const FAQ = () => {
 
         <div className="text-center mt-16">
           <p className="text-gray-300 mb-6">Still have questions?</p>
-          <a href="tel:+12893675460" className="btn-primary">
+          <Link to="/form" className="btn-primary">
             <Phone className="w-4 h-4" />
             Call A Handler
-          </a>
+          </Link>
         </div>
       </div>
     </section>

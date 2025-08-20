@@ -37,7 +37,7 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Link to="/book" className="btn-primary">
+            <Link to="/form" className="btn-primary">
               Get Started
             </Link>
           </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              <Link to="/book" className="btn-primary mt-4">
+              <Link to="/form" className="btn-primary mt-4">
                 Get Started
               </Link>
             </div>

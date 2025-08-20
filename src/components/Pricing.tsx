@@ -100,7 +100,7 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <Link to="/book" className={`${plan.ctaStyle} w-full justify-center`}>
+              <Link to="/form" className={`${plan.ctaStyle} w-full justify-center`}>
                 {plan.cta}
                 {plan.ctaStyle === 'btn-primary' && <ArrowRight className="w-4 h-4" />}
               </Link>

@@ -7,6 +7,7 @@ import HowItWorks from '../components/HowItWorks';
 import Features from '../components/Features';
 import Pricing from '../components/Pricing';
 import FAQ from '../components/FAQ';
+import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 
 const LandingPage = () => {
@@ -20,6 +21,7 @@ const LandingPage = () => {
       <Features />
       <Pricing />
       <FAQ />
+      <ContactForm />
       <Footer />
     </>
   );

@@ -9,25 +9,20 @@ const Hero = () => {
         <div className="flex flex-col items-center text-center">
           {/* Headline */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[0.98] mb-6 max-w-6xl">
-            Never Miss Another Lead Again — Custom{' '}
-            <span className="gradient-text">AI Receptionists & Outbound Agents</span>{' '}
-            That Work 24/7.
+            Never Miss Another Lead Again with{' '}
+            <span className="gradient-text">24/7 AI Employees</span>
           </h1>
 
           {/* Sub-headline */}
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-4xl leading-relaxed">
-            Stop losing revenue to missed calls, slow follow-up, or expensive staff. We build you a done-for-you AI system that answers every call, books appointments, qualifies leads, and nurtures prospects — all while running with round-the-clock professionalism.
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-5xl leading-relaxed font-medium">
+            We build custom AI Receptionists & Outbound Agents that answers every call, books appointments, qualifies leads, and nurtures prospects work for you 24/7.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Link to="/form" className="btn-primary text-lg px-8 py-4">
-              👉 Book Your Free Strategy Call <ArrowRight className="w-5 h-5" />
+          <div className="mb-12">
+            <Link to="/form" className="btn-primary text-xl px-12 py-5">
+              Build Your AI Voice Agent Today!
             </Link>
-            <a href="#how-it-works" className="btn-secondary text-lg px-8 py-4">
-              <Play className="w-5 h-5" />
-              See How It Works
-            </a>
           </div>
 
           {/* Platform Mockup Window */}

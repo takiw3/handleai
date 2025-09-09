@@ -37,8 +37,8 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Link to="/form" className="btn-primary">
-              Get Started
+            <Link to="/form" className="btn-primary text-sm px-6 py-3">
+              Build Your AI Voice Agent Today!
             </Link>
           </div>
 
@@ -65,8 +65,8 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              <Link to="/form" className="btn-primary mt-4">
-                Get Started
+              <Link to="/form" className="btn-primary mt-4 text-sm px-6 py-3">
+                Build Your AI Voice Agent Today!
               </Link>
             </div>
           </div>

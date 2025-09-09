@@ -1,8 +1,14 @@
-import React from 'react';
-import { Phone, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 const ContactForm = () => {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"30min"});
+      cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, [])
+
   return (
     <section className="section-padding" style={{ backgroundColor: 'var(--bg-deep-navy)' }}>
       <div className="container">
@@ -11,32 +17,47 @@ const ContactForm = () => {
             Ready to Get Started?
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-            Fill out the form below and we'll call you within 24 hours to set up your AI automation
+            Book your free strategy call and see how Propulsion AI can transform your business
           </p>
         </div>
 
-        {/* Airtable Form */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <div className="bg-white rounded-2xl overflow-hidden shadow-2xl">
-            <iframe 
-              className="airtable-embed" 
-              src="https://airtable.com/embed/appDCRMf4QTGnqjnN/pago6BplJNhrUAQiY/form" 
-              frameBorder="0" 
-              width="100%" 
-              height="533" 
-              style={{ background: 'transparent', border: '1px solid #ccc' }}
+        {/* Cal.com Embed */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl overflow-hidden shadow-2xl" style={{ height: '600px' }}>
+            <Cal 
+              namespace="30min"
+              calLink="propulsion-ai/30min"
+              style={{width:"100%",height:"100%",overflow:"scroll"}}
+              config={{"layout":"month_view"}}
             />
           </div>
         </div>
 
-        {/* Alternative CTA */}
-        <div className="text-center">
-          <p className="text-gray-300 mb-6">Prefer to speak with someone right away?</p>
-          <Link to="/form" className="btn-primary">
-            <Phone className="w-4 h-4" />
-            Get Your AI Handler
-            <ArrowRight className="w-4 h-4" />
-          </Link>
+        {/* Trust indicators */}
+        <div className="text-center mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">30m</span>
+              </div>
+              <h3 className="text-white font-semibold mb-2">Free Strategy Call</h3>
+              <p className="text-gray-400 text-sm">No cost, no commitment required</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">14d</span>
+              </div>
+              <h3 className="text-white font-semibold mb-2">Quick Setup</h3>
+              <p className="text-gray-400 text-sm">Your AI agents ready in 2 weeks</p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">AI</span>
+              </div>
+              <h3 className="text-white font-semibold mb-2">Custom Built</h3>
+              <p className="text-gray-400 text-sm">Tailored to your business needs</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

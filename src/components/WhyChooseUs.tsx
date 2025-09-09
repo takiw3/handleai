@@ -53,33 +53,6 @@ const WhyChooseUs = () => {
             </div>
           ))}
         </div>
-
-        {/* Comparison Visual */}
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* DIY Tools */}
-            <div className="bg-red-900/20 border border-red-500/30 rounded-2xl p-8 text-center">
-              <h3 className="text-xl font-bold text-red-400 mb-4">DIY AI Tools</h3>
-              <ul className="space-y-3 text-gray-400">
-                <li>❌ Generic, one-size-fits-all</li>
-                <li>❌ Complex setup & maintenance</li>
-                <li>❌ Limited customization</li>
-                <li>❌ No ongoing support</li>
-              </ul>
-            </div>
-
-            {/* Propulsion AI */}
-            <div className="bg-green-900/20 border border-green-500/30 rounded-2xl p-8 text-center">
-              <h3 className="text-xl font-bold text-green-400 mb-4">Propulsion AI</h3>
-              <ul className="space-y-3 text-gray-400">
-                <li>✅ Custom-built for your business</li>
-                <li>✅ Done-for-you setup & optimization</li>
-                <li>✅ Unlimited customization</li>
-                <li>✅ Dedicated support team</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

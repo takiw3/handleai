@@ -18,7 +18,7 @@ const FinalCTA = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link to="/form" className="btn-primary text-xl px-12 py-5">
               <Calendar className="w-6 h-6" />
-              👉 Book Your Free Strategy Call
+              Build Your AI Voice Agent Today!
               <ArrowRight className="w-6 h-6" />
             </Link>
           </div>

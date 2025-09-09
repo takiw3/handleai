@@ -5,23 +5,23 @@ const DreamOutcome = () => {
   const outcomes = [
     {
       icon: Clock,
-      text: 'Every lead is answered instantly, day or night'
+      text: 'Every lead answered instantly'
     },
     {
       icon: CheckCircle,
-      text: 'Appointments are booked directly into your calendar without you lifting a finger'
+      text: 'Appointments booked automatically'
     },
     {
       icon: Users,
-      text: 'Prospects are qualified and nurtured automatically until they\'re ready to buy'
+      text: 'Prospects qualified and nurtured'
     },
     {
       icon: Shield,
-      text: 'Clients feel your business is always on, always professional, and always reliable'
+      text: 'Always professional and reliable'
     },
     {
       icon: TrendingUp,
-      text: 'You scale with confidence, knowing your systems won\'t break under growth'
+      text: 'Scale with confidence'
     }
   ];
 
@@ -42,7 +42,7 @@ const DreamOutcome = () => {
                 <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
                   <outcome.icon className="w-6 h-6 text-white" />
                 </div>
-                <p className="text-lg text-gray-300 leading-relaxed pt-2">
+                <p className="text-lg text-gray-300 leading-relaxed pt-2 font-medium">
                   {outcome.text}
                 </p>
               </div>

@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import Integrations from '../components/Integrations';
-import Benefits from '../components/Benefits';
+import PainPoints from '../components/PainPoints';
+import DreamOutcome from '../components/DreamOutcome';
 import HowItWorks from '../components/HowItWorks';
+import WhyChooseUs from '../components/WhyChooseUs';
 import Features from '../components/Features';
-import Pricing from '../components/Pricing';
 import FAQ from '../components/FAQ';
+import FinalCTA from '../components/FinalCTA';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 
@@ -15,12 +16,13 @@ const LandingPage = () => {
     <>
       <Navbar />
       <Hero />
-      <Integrations />
-      <Benefits />
+      <PainPoints />
+      <DreamOutcome />
       <HowItWorks />
+      <WhyChooseUs />
       <Features />
-      <Pricing />
       <FAQ />
+      <FinalCTA />
       <ContactForm />
       <Footer />
     </>

@@ -9,7 +9,7 @@ const Navbar = () => {
     { label: 'Benefits', href: '#benefits' },
     { label: 'How it Works', href: '#how-it-works' },
     { label: 'Features', href: '#features' },
-    { label: 'Pricing', href: '#pricing' },
+    { label: 'FAQ', href: '#faq' },
   ];
 
   return (
@@ -17,10 +17,10 @@ const Navbar = () => {
       <div className="container">
         <div className="flex items-center justify-between h-[68px]">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <span className="text-2xl">🤝</span>
             <span className="text-lg font-bold text-white">Propulsion AI</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

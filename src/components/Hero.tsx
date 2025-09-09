@@ -1,53 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight, Phone, BarChart3 } from 'lucide-react';
+import React from 'react';
+import { ArrowRight, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
-  const rotatingWords = ['follow ups', 'late invoices', 'no-shows', 'lead nurture', 'support'];
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % rotatingWords.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="hero-height flex items-center justify-center">
       <div className="container">
         <div className="flex flex-col items-center text-center">
-          {/* Tag Pill */}
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/8 backdrop-blur-sm mb-8">
-            <span className="text-xs font-semibold text-white/80 tracking-wide">
-              AI-POWERED BUSINESS AUTOMATION
-            </span>
-          </div>
-
-          {/* Headline with rotating text */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[0.98] mb-6 max-w-5xl">
-            Let us handle{' '}
-            <span className="gradient-text rotating-text">
-              {rotatingWords[currentWordIndex]}
-            </span>{' '}
-            for you.
+          {/* Headline */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[0.98] mb-6 max-w-6xl">
+            Never Miss Another Lead Again — Custom{' '}
+            <span className="gradient-text">AI Receptionists & Outbound Agents</span>{' '}
+            That Work 24/7.
           </h1>
 
           {/* Sub-headline */}
-          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl leading-relaxed">
-            AI voice agents that book appointments, qualify leads, and handle customer support for you 24/7 across voice, email, and text.
+          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-4xl leading-relaxed">
+            Stop losing revenue to missed calls, slow follow-up, or expensive staff. We build you a done-for-you AI system that answers every call, books appointments, qualifies leads, and nurtures prospects — all while running with round-the-clock professionalism.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Link to="/form" className="btn-primary">
-              Start Free Trial <ArrowRight className="w-4 h-4" />
+            <Link to="/form" className="btn-primary text-lg px-8 py-4">
+              👉 Book Your Free Strategy Call <ArrowRight className="w-5 h-5" />
             </Link>
-            <Link to="/form" className="btn-secondary">
-              <Phone className="w-4 h-4" />
-              Call A Handler
-            </Link>
+            <a href="#how-it-works" className="btn-secondary text-lg px-8 py-4">
+              <Play className="w-5 h-5" />
+              See How It Works
+            </a>
           </div>
 
           {/* Platform Mockup Window */}
@@ -61,7 +41,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center gap-2 text-white/90">
                 <div className="w-5 h-5 bg-blue-500 rounded flex items-center justify-center">
-                  <BarChart3 className="w-3 h-3 text-white" />
+                  <span className="text-xs font-bold text-white">AI</span>
                 </div>
                 <span className="text-sm font-semibold">Propulsion AI Dashboard</span>
               </div>
@@ -84,65 +64,65 @@ const Hero = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="metric-card">
                   <div className="metric-header">
-                    <span className="metric-label">Revenue Recovered</span>
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="metric-label">Calls Answered Today</span>
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                   </div>
-                  <div className="metric-value text-green-400">$42,350</div>
-                  <div className="metric-change text-green-400">+12% this month</div>
+                  <div className="metric-value text-green-400">247</div>
+                  <div className="metric-change text-green-400">100% answer rate</div>
                 </div>
                 <div className="metric-card">
                   <div className="metric-header">
-                    <span className="metric-label">Active Handlers</span>
+                    <span className="metric-label">Appointments Booked</span>
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                   </div>
-                  <div className="metric-value text-blue-400">3</div>
-                  <div className="metric-change text-blue-400">All systems active</div>
+                  <div className="metric-value text-blue-400">89</div>
+                  <div className="metric-change text-blue-400">+34% this week</div>
                 </div>
                 <div className="metric-card">
                   <div className="metric-header">
-                    <span className="metric-label">Tasks Completed</span>
+                    <span className="metric-label">Leads Qualified</span>
                     <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                   </div>
-                  <div className="metric-value text-purple-400">1,247</div>
-                  <div className="metric-change text-purple-400">+89 today</div>
+                  <div className="metric-value text-purple-400">156</div>
+                  <div className="metric-change text-purple-400">Ready for sales</div>
                 </div>
               </div>
 
               {/* Activity Feed */}
               <div className="activity-section">
-                <h3 className="text-white font-semibold mb-4">Recent Activity</h3>
+                <h3 className="text-white font-semibold mb-4">Live AI Agent Activity</h3>
                 <div className="space-y-3">
                   <div className="activity-item">
-                    <div className="activity-dot bg-green-500"></div>
+                    <div className="activity-dot bg-green-500 animate-pulse"></div>
                     <div className="activity-content">
-                      <span className="activity-text">Invoice #1234 payment received</span>
-                      <span className="activity-amount text-green-400">$2,500</span>
+                      <span className="activity-text">AI Receptionist answered call from John Smith</span>
+                      <span className="activity-detail">Appointment booked for tomorrow 2:00 PM</span>
                     </div>
-                    <span className="activity-time">2 min ago</span>
+                    <span className="activity-time">Live</span>
                   </div>
                   <div className="activity-item">
                     <div className="activity-dot bg-blue-500"></div>
                     <div className="activity-content">
-                      <span className="activity-text">Appointment confirmed for John Smith</span>
-                      <span className="activity-detail">Tomorrow at 2:00 PM</span>
+                      <span className="activity-text">Outbound agent qualified lead: Sarah Johnson</span>
+                      <span className="activity-detail">High-intent prospect, forwarded to sales</span>
                     </div>
-                    <span className="activity-time">5 min ago</span>
+                    <span className="activity-time">2 min ago</span>
                   </div>
                   <div className="activity-item">
                     <div className="activity-dot bg-purple-500"></div>
                     <div className="activity-content">
-                      <span className="activity-text">Lead follow-up sent to 15 prospects</span>
-                      <span className="activity-detail">Email campaign completed</span>
+                      <span className="activity-text">Follow-up sequence initiated for 12 prospects</span>
+                      <span className="activity-detail">Personalized SMS + email campaign</span>
                     </div>
-                    <span className="activity-time">12 min ago</span>
+                    <span className="activity-time">5 min ago</span>
                   </div>
                   <div className="activity-item">
                     <div className="activity-dot bg-orange-500"></div>
                     <div className="activity-content">
-                      <span className="activity-text">No-show recovery initiated</span>
-                      <span className="activity-detail">3 appointments rescheduled</span>
+                      <span className="activity-text">AI handled 15 FAQ inquiries</span>
+                      <span className="activity-detail">No human intervention needed</span>
                     </div>
-                    <span className="activity-time">18 min ago</span>
+                    <span className="activity-time">8 min ago</span>
                   </div>
                 </div>
               </div>
